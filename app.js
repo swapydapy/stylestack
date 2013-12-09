@@ -48,7 +48,8 @@ app.configure(function(){
     key: 'express.sid',
     store: app.sessionStore
   }));
-  mongoose.connect(dbPath, function onMongooseError(err) {
+  
+  mongoose.connect("mongodb://nodejitsu_swapydapy:h1mumvschlopj4l49ku1d3oip1@ds047008.mongolab.com:47008/nodejitsu_swapydapy_nodejitsudb2250947044", function onMongooseError(err) {
     if (err) throw err;
   });
 });
